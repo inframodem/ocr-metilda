@@ -1,6 +1,6 @@
 from PIL import Image, ImageOps
 from pathlib import Path
-from CommonVars import SUPPORTED_EXTS, PDF_EXTS, PDF_DPI
+from ocr_app.CommonVars import SUPPORTED_EXTS, PDF_EXTS, PDF_DPI
 import numpy as np
 from typing import  Iterator
 

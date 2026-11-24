@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from .DeviceInfo import DeviceInfo
 from datetime import datetime
-from CommonVars import PDF_EXTS, PDF_DPI
+from ocr_app.CommonVars import PDF_EXTS, PDF_DPI
 
 @dataclass
 class ModelInfo:

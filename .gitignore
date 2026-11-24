@@ -2,3 +2,5 @@ Docs/
 output/
 o2/
 .venv/Lib
+dist/
+build/

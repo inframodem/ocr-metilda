@@ -26,15 +26,15 @@ from typing import Optional
 from tkinter import filedialog
 
 import customtkinter as ctk
-from backend.ModelRegister import ModelRegistry
-from backend.DeviceInfo import DeviceInfo, detect_device
-from backend.OCRJob import OCRJob
-from backend.Exporter import Exporter
+from ocr_app.backend.ModelRegister import ModelRegistry
+from ocr_app.backend.DeviceInfo import DeviceInfo, detect_device
+from ocr_app.backend.OCRJob import OCRJob
+from ocr_app.backend.Exporter import Exporter
 
-from frontend.UIHelpers import set_enabled, GuideDialog
-from frontend.ImportPanel import ImportPanel
-from frontend.CenterPanel import CenterPanel
-from frontend.ModelPanel import ModelPanel
+from ocr_app.frontend.UIHelpers import set_enabled, GuideDialog
+from ocr_app.frontend.ImportPanel import ImportPanel
+from ocr_app.frontend.CenterPanel import CenterPanel
+from ocr_app.frontend.ModelPanel import ModelPanel
 
 if getattr(sys, "frozen", False):                     # built with PyInstaller
     APP_DIR = Path(sys.executable).resolve().parent
@@ -173,5 +173,8 @@ class App(ctk.CTk):
         self.destroy()
 
 
-if __name__ == "__main__":
+def main():
     App().mainloop()
+
+if __name__ == "__main__":
+    main()
