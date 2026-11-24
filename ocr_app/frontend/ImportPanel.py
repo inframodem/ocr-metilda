@@ -4,8 +4,8 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog
 
-from ..backend.DocumentLoader import DocumentLoader
-from ..CommonVars import SUPPORTED_EXTS
+from backend.DocumentLoader import DocumentLoader
+from CommonVars import SUPPORTED_EXTS
 from .UIHelpers import set_enabled
 
 

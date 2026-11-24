@@ -2,8 +2,8 @@ import customtkinter as ctk
 from typing import Callable
 from typing import Optional
 
-from ..backend.ModelInfo import ModelInfo
-from ..CommonVars import SUPPORTED_EXTS
+from backend.ModelInfo import ModelInfo
+from CommonVars import SUPPORTED_EXTS
 from .UIHelpers import set_enabled
 
 class ModelPanel(ctk.CTkFrame):
